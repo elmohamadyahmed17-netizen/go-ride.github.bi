@@ -1,0 +1,229 @@
+/* Task 5: Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Task 6: Navbar Styling */
+.navbar-header {
+    background-color: #1F2937;
+    padding: 15px 0;
+}
+
+.logo {
+    float: left;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1677FF;
+}
+
+/* Task 7: Header / Hero Styling */
+.hero {
+    background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.hero-content {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #d1d5db;
+}
+
+.hero-image {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+.btn-book {
+    background-color: #1677FF;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #0958d9;
+}
+
+/* Task 8: Services Cards Styling */
+.services {
+    padding: 60px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1F2937;
+}
+
+.card {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #1677FF;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #4b5563;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.btn-learn {
+    display: inline-block;
+    background-color: #1F2937;
+    color: #ffffff;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn:hover {
+    background-color: #1677FF;
+}
+
+/* Task 9: Footer Styling */
+footer {
+    background-color: #1F2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #1677FF;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* Task 10: Responsive Design - Media Queries */
+@media screen and (max-width: 768px) {
+    .logo, .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        margin-top: 10px;
+    }
+
+    .hero-content, .hero-image {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .card {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
